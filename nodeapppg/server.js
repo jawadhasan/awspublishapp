@@ -6,11 +6,11 @@ const { Client } = require('pg')
 const client = new Client({
 	user: 'postgres',
 	host: 'localhost',
-	database: 'registration',
+	database: 'productsdb', //registration
 	password: 'sasa',
 	port: 5432,
 })
-const sqlText = 'SELECT * from users'
+const sqlText = 'SELECT * from products' //users
 client.connect();
 
 //web-server
